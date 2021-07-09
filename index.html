@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="normalStyleL21.css">
-  <title>Nuemorphism Clock Design</title>
-</head>
-
-<body>
-  <div class="clock">
-    <div class="hour">
-      <div class="hr" id="hr"></div>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="outerBody">
+      <div class="hrContainer">
+        <div id="hr"></div>
+      </div>
+      <div class="minContainer">
+        <div id="min"></div>
+      </div>
+      <div class="secContainer">
+        <div id="sec"></div>
+      </div>
     </div>
-    <div class="min">
-      <div class="mn" id="mn"></div>
-    </div>
-    <div class="sec">
-      <div class="sc" id="sc"></div>
-    </div>
-  </div>
-  <script type="text/javascript">
-    const deg = 6;
-    const hr = document.getElementById('hr');
-    const mn = document.getElementById('mn');
-    const sc = document.getElementById('sc');
-    setInterval(() => {
-      let day = new Date();
-      let hh = day.getHours() * 30;
-      let mm = day.getMinutes() * deg;
-      let ss = day.getSeconds() * deg;
-      hr.style.transform = "rotateZ(" + (hh) + (mm / 12) + "deg)";
-      mn.style.transform = 'rotateZ(' + mm + 'deg)';
-      sc.style.transform = 'rotateZ(' + ss + 'deg)';
-    }, 1000)
-  </script>
-</body>
-
+    <script>
+    var sec = document.querySelector(".secContainer");
+    var min = document.querySelector(".minContainer");
+    var hr = document.querySelector(".hrContainer");
+    setInterval(function() {
+        var d = new Date();
+        sec.style.transform = "rotate("+d.getSeconds()*6+"deg)";
+        min.style.transform = "rotate("+d.getMinutes()*6+"deg)";
+        hr.style.transform = "rotate("+d.getHours()*30+"deg)";
+    },1000);
+    </script>
+    <!-- Hindu marrige act section 2 or three -->
+  </body>
 </html>
