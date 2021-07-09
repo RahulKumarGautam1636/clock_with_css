@@ -58,5 +58,5 @@ body {
   height: 27%;
   margin-top: 138px;
   width: 10px;
-
+  transition: transform 3595s;
 }
