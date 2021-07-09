@@ -47,6 +47,9 @@ body {
   margin-top: 96px;
   border-radius: 5px;
 }
+.hrContainer {
+  transition: transform 3595s;
+} 
 #min {
   width: 6px;
   background: rgb(65, 255, 0, 0.8);
@@ -58,5 +61,4 @@ body {
   height: 27%;
   margin-top: 138px;
   width: 10px;
-  transition: transform 3595s;
 }
