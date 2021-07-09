@@ -1,83 +1,61 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  background: #091921;
-}
-.clock {
-  width: 350px;
-  height: 350px;
+  background: #072126;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(clock.png);
-  background-size: cover;
+}
+.outerBody {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background: transparent;
   border: 4px solid #091921;
   border-radius: 50%;
+  background-image: url(clock.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
               inset 0 -15px 15px rgba(255, 255, 255, 0.05),
               0 -15px 15px rgba(0, 0, 0, 0.05),
               inset 0 -15px 15px rgba(0, 0, 0, 0.05);
 }
-.clock:before {
+.outerBody::before {
   content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: rgb(0, 255, 255);
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  z-index: 3;
+  background: rgb(0, 255, 255);
+  z-index: 2;
 }
-.clock .hour,
-.clock .min,
-.clock .sec {
+.outerBody > div  {
   position: absolute;
-}
-.clock .hour, .hr {
-  width: 160px;
-  height: 160px;
-}
-.clock .min, .mn {
-  width: 190px;
-  height: 190px;
-}
-.clock .sec, .sc {
-  width: 230px;
-  height: 230px;
-}
-.hr, .mn, .sc {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  position: absolute;
-  border-radius: 50%;
 }
-.hr::before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 80px;
-  background: #ff105e;
-  z-index: 10;
-  border-radius: 6px 6px 0 0;
-}
-.mn::before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 90px;
-  background: rgb(65, 255, 0, 0.8);
-  z-index: 11;
-  border-radius: 6px 6px 0 0;
-}
-.sc::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 150px;
+.outerBody > div div {
+  height: 40%;
+  width: 5px;
   background: rgb(255, 0, 255);
-  z-index: 12;
-  border-radius: 6px 6px 0 0;
+  margin-top: 96px;
+  border-radius: 5px;
+}
+#min {
+  width: 6px;
+  background: rgb(65, 255, 0, 0.8);
+  height: 34%;
+  margin-top: 114px;
+}
+#hr {
+  background: #ff105e;
+  height: 27%;
+  margin-top: 138px;
+  width: 10px;
 }
