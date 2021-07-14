@@ -1,0 +1,53 @@
+.containerFive {
+  height: 540px;
+  width: 540px;
+  background: cyan;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.containerFive::before {
+  position: absolute;
+  content: '';
+  top: -100%;
+  left: -25%;
+  height: 150%;
+  width: 150%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 35%;
+  animation: animate1 5s linear infinite;
+  transition: 2s ease-in;
+}
+.containerFive::after {
+  position: absolute;
+  content: '';
+  top: -100%;
+  left: -25%;
+  height: 150%;
+  width: 150%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 35%;
+  animation: animate2 10s linear infinite;
+  /* animation-delay: 0.5s; */
+  transition: 1.5s ease-in;
+}
+@keyframes animate1 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.containerFive:hover::before,
+.containerFive:hover::after {
+  top: -120%;
+}
