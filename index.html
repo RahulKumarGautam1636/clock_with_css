@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> -->
     <link rel="stylesheet" href="CSS/3D-cards.css">
     <link rel="stylesheet" href="CSS/3D-rotating-card.css">
     <link rel="stylesheet" href="CSS/checklist.css">
@@ -21,7 +22,9 @@
   </head>
   <body>
   <!-- 3D-cards -->
-  <div class="containerOne">
+  <div class="outerWrapper">
+    <div class="wrapper">
+    <div class="containerOne">
       <div class="card">
         <div class="imgBx">
           <img src="CSS/assets/design.png" alt="design">
@@ -31,97 +34,119 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-  </div>
+    </div>
+    </div>
 
-  <!-- 3D-rotating-card -->
-  <div class="containerTwo"></div>
+    <!-- 3D-rotating-card -->
+    <div class="wrapper">
+    <div class="containerTwo"></div>
+    </div>
+  </div>
 
   <!-- Checklist with CSS    -->
-  <div class="containerthree">
-    <h1>CSS Only item check List</h1>
-    <label>
-      <input type="checkbox" name="">
-      <i></i>
-      <span>Lorem ipsum dolor sit amet</span>
-    </label>
-    <label>
-      <input type="checkbox" name="">
-      <i></i>
-      <span>consectetur adipisicing elit</span>
-    </label>
-    <label>
-      <input type="checkbox" name="">
-      <i></i>
-      <span>Duis aute irure dolor</span>
-    </label>
-    <label>
-      <input type="checkbox" name="">
-      <i></i>
-      <span>sunt in culpa qui</span>
-    </label>
-    <label>
-      <input type="checkbox" name="">
-      <i></i>
-      <span>deserunt mollit anim id est</span>
-    </label>
-  </div>
+  <div class="outerWrapper">
+      <div class="wrapper">
+      <div class="containerthree">
+        <h1>CSS Only item check List</h1>
+        <label>
+          <input type="checkbox" name="">
+          <i></i>
+          <span>Lorem ipsum dolor sit amet</span>
+        </label>
+        <label>
+          <input type="checkbox" name="">
+          <i></i>
+          <span>consectetur adipisicing elit</span>
+        </label>
+        <label>
+          <input type="checkbox" name="">
+          <i></i>
+          <span>Duis aute irure dolor</span>
+        </label>
+        <label>
+          <input type="checkbox" name="">
+          <i></i>
+          <span>sunt in culpa qui</span>
+        </label>
+        <label>
+          <input type="checkbox" name="">
+          <i></i>
+          <span>deserunt mollit anim id est</span>
+        </label>
+      </div>
+      </div>
 
-  <!-- Colored-Borders -->
-  <div class="cardBorder">
-    <span></span>
-    <h2>Glowing Border</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!-- Colored-Borders -->
+      <div class="wrapper">
+      <div class="cardBorder">
+        <span></span>
+        <h2>Glowing Border</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      </div>
   </div>
 
   <!-- Image Gallery -->
-  <div class="containerFour">
-    <div class="">
-      <img src="CSS/assets/img3.jpg" alt="one">
-      <div class="content">
-        <h1>IMAGE TITLE</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="outerWrapper">
+      <div class="wrapper">
+       <div class="containerFour">
+        <div class="">
+          <img src="CSS/assets/img3.jpg" alt="one">
+          <div class="content">
+            <h1>IMAGE TITLE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="">
+          <img src="CSS/assets/img2.jpg" alt="two">
+          <div class="content">
+            <h1>IMAGE TITLE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="">
+        <img src="CSS/assets/img4.jpg" alt="three">
+        <div class="content">
+          <h1>IMAGE TITLE</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </div>
       </div>
-    </div>
-    <div class="">
-      <img src="CSS/assets/img2.jpg" alt="two">
-      <div class="content">
-        <h1>IMAGE TITLE</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="">
-    <img src="CSS/assets/img4.jpg" alt="three">
-    <div class="content">
-      <h1>IMAGE TITLE</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+     </div>
+
+    <!-- Liquid Bowl -->
+    <div class="wrapper">
+    <div class="containerFive"></div>
     </div>
   </div>
-
-  <!-- Liquid Bowl -->
-  <div class="containerFive"></div>
 
   <!-- Nuemorphism-clock -->
-  <div class="Bground">
-   <div class="outerBody">
-    <div class="hrContainer">
-      <div id="hr"></div>
-    </div>
-    <div class="minContainer">
-      <div id="min"></div>
-    </div>
-    <div class="secContainer">
-      <div id="sec"></div>
-    </div>
-   </div>
-  </div>
+  <div class="outerWrapper">
+      <div class="wrapper">
+       <div class="Bground">
+       <div class="outerBody">
+        <div class="hrContainer">
+          <div id="hr"></div>
+        </div>
+        <div class="minContainer">
+          <div id="min"></div>
+        </div>
+        <div class="secContainer">
+          <div id="sec"></div>
+        </div>
+       </div>
+       </div>
+       </div>
 
-   <!-- Reflections -->
-   <div class="containerSix">
-     <img src="CSS/assets/img1.jpg" alt="one">
-     <img src="CSS/assets/img2.jpg" alt="two">
-     <img src="CSS/assets/img3.jpg" alt="three">
-   </div>
+         <!-- Reflections -->
+        <div class="wrapper">
+        <div class="containerSix">
+         <img src="CSS/assets/img1.jpg" alt="one">
+         <img src="CSS/assets/img2.jpg" alt="two">
+         <img src="CSS/assets/img3.jpg" alt="three">
+        </div>
+       </div>
+  </div>
 
    <!-- Scrolling-text -->
   <div class="containerSeven">
@@ -136,7 +161,9 @@
   </div>
 
    <!-- Commercial Shoe Card -->
-   <div class="container8">
+ <div class="outerWrapper">
+     <div class="wrapper">
+     <div class="container8">
      <img id="shoe" src="CSS/assets/shoes.png" alt="shoes">
       <div class="content">
        <h1 id="title">Nike Shoes</h1>
@@ -160,29 +187,58 @@
        <button id="buyNow" type="button" name="button">Buy Now</button>
       </div>
    </div>
-
+   </div>
    <!-- Slide-up-card -->
+   <div class="wrapper">
    <div class="cardSlide">
-     <img src="CSS/assets/img1.jpg" alt="img1">
+     <img src="CSS/assets/playCard.jpg" alt="img1">
      <div class="content">
      <h2>Post One Title</h2>
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
      </div>
    </div>
+   </div>
+ </div>
 
    <!-- Switch with CSS -->
-  <div class="container9">
-   <label>
-     <input type="checkbox" name="" value="">
-     <span class="check"></span>
-     <span class="btn"></span>
-   </label>
-   <label>
-     <input type="checkbox" name="" value="">
-     <span class="check"></span>
-     <span class="btn" id="btn2"></span>
-   </label>
-  </div>
+   <div class="outerWrapper">
+           <div class="wrapper">
+        <div class="container9">
+         <label>
+           <input type="checkbox" name="" value="">
+           <span class="check"></span>
+           <span class="btn"></span>
+         </label>
+         <label>
+           <input type="checkbox" name="" value="">
+           <span class="check"></span>
+           <span class="btn" id="btn2"></span>
+         </label>
+        </div>
+      </div>
+      <!-- Bouncing Spiral -->
+      <div class="wrapper">
+          <div class="container11">
+          <div class="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+      </div>
+   </div>
 
    <!-- Text-Animations -->
    <div class="container10">
@@ -193,30 +249,9 @@
     <h1 data-text="Contact">Contact</h1>
    </div>
 
-   <!-- Bouncing Spiral -->
-   <div class="container11">
-    <div class="loader">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-   </div>
 
    <!-- Rain Effect -->
-     <section>
-     </section>
+     <section></section>
 
   <script>
   var sec = document.querySelector(".secContainer");
