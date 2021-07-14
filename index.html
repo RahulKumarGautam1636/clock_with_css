@@ -1,33 +1,234 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="CSS/3D-cards.css">
+    <link rel="stylesheet" href="CSS/3D-rotating-card.css">
+    <link rel="stylesheet" href="CSS/checklist.css">
+    <link rel="stylesheet" href="CSS/colored-borders.css">
+    <link rel="stylesheet" href="CSS/image-gallery.css">
+    <link rel="stylesheet" href="CSS/liquid-bowl.css">
+    <link rel="stylesheet" href="CSS/nuemorphism-clock.css">
+    <link rel="stylesheet" href="CSS/reflections.css">
+    <link rel="stylesheet" href="CSS/scrolling-text.css">
+    <link rel="stylesheet" href="CSS/shoeCard.css">
+    <link rel="stylesheet" href="CSS/slide-up-cards.css">
+    <link rel="stylesheet" href="CSS/switches.css">
+    <link rel="stylesheet" href="CSS/text-animations.css">
+    <link rel="stylesheet" href="CSS/bouncing-spiral.css">
+    <link rel="stylesheet" href="CSS/rain.css">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="normalStyleL21.css">
-    <title></title>
+    <title>All Effects in One Place</title>
   </head>
   <body>
-    <div class="outerBody">
-      <div class="hrContainer">
-        <div id="hr"></div>
+  <!-- 3D-cards -->
+  <div class="containerOne">
+      <div class="card">
+        <div class="imgBx">
+          <img src="CSS/assets/design.png" alt="design">
+          <h2>Design</h2>
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
       </div>
-      <div class="minContainer">
-        <div id="min"></div>
-      </div>
-      <div class="secContainer">
-        <div id="sec"></div>
+  </div>
+
+  <!-- 3D-rotating-card -->
+  <div class="containerTwo"></div>
+
+  <!-- Checklist with CSS    -->
+  <div class="containerthree">
+    <h1>CSS Only item check List</h1>
+    <label>
+      <input type="checkbox" name="">
+      <i></i>
+      <span>Lorem ipsum dolor sit amet</span>
+    </label>
+    <label>
+      <input type="checkbox" name="">
+      <i></i>
+      <span>consectetur adipisicing elit</span>
+    </label>
+    <label>
+      <input type="checkbox" name="">
+      <i></i>
+      <span>Duis aute irure dolor</span>
+    </label>
+    <label>
+      <input type="checkbox" name="">
+      <i></i>
+      <span>sunt in culpa qui</span>
+    </label>
+    <label>
+      <input type="checkbox" name="">
+      <i></i>
+      <span>deserunt mollit anim id est</span>
+    </label>
+  </div>
+
+  <!-- Colored-Borders -->
+  <div class="cardBorder">
+    <span></span>
+    <h2>Glowing Border</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="containerFour">
+    <div class="">
+      <img src="CSS/assets/img3.jpg" alt="one">
+      <div class="content">
+        <h1>IMAGE TITLE</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
-    <script>
-    var sec = document.querySelector(".secContainer");
-    var min = document.querySelector(".minContainer");
-    var hr = document.querySelector(".hrContainer");
-    setInterval(function() {
-        var d = new Date();
-        sec.style.transform = "rotate("+d.getSeconds()*6+"deg)";
-        min.style.transform = "rotate("+d.getMinutes()*6+"deg)";
-        hr.style.transform = "rotate("+d.getHours()*30+"deg)";
-    },1000);
-    </script>
-    <!-- Hindu marrige act section 2 or three -->
+    <div class="">
+      <img src="CSS/assets/img2.jpg" alt="two">
+      <div class="content">
+        <h1>IMAGE TITLE</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="">
+    <img src="CSS/assets/img4.jpg" alt="three">
+    <div class="content">
+      <h1>IMAGE TITLE</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    </div>
+  </div>
+
+  <!-- Liquid Bowl -->
+  <div class="containerFive"></div>
+
+  <!-- Nuemorphism-clock -->
+  <div class="Bground">
+   <div class="outerBody">
+    <div class="hrContainer">
+      <div id="hr"></div>
+    </div>
+    <div class="minContainer">
+      <div id="min"></div>
+    </div>
+    <div class="secContainer">
+      <div id="sec"></div>
+    </div>
+   </div>
+  </div>
+
+   <!-- Reflections -->
+   <div class="containerSix">
+     <img src="CSS/assets/img1.jpg" alt="one">
+     <img src="CSS/assets/img2.jpg" alt="two">
+     <img src="CSS/assets/img3.jpg" alt="three">
+   </div>
+
+   <!-- Scrolling-text -->
+  <div class="containerSeven">
+   <div class="one">
+     <h1 id="front">Higurashi: when they cry is one of the best supernatural physiological horror anime series.
+         it has 2 seasons and the 3rd one is being air this month.</h1>
+   </div>
+   <div class="two">
+       <h1 id="back">Higurashi: when they cry is one of the best supernatural physiological horror anime series.
+           it has 2 seasons and the 3rd one is being air this month.</h1>
+   </div>
+  </div>
+
+   <!-- Commercial Shoe Card -->
+   <div class="container8">
+     <img id="shoe" src="CSS/assets/shoes.png" alt="shoes">
+      <div class="content">
+       <h1 id="title">Nike Shoes</h1>
+       <div class="sizeBx">
+         <h2>SIZE :</h2>
+         <div class="sizes">
+           <div><p>7</p></div>
+           <div><p>8</p></div>
+           <div><p>9</p></div>
+           <div><p>10</p></div>
+         </div>
+       </div>
+       <div class="colorBx">
+         <h2>COLOR :</h2>
+         <div class="colors">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+       </div>
+       <button id="buyNow" type="button" name="button">Buy Now</button>
+      </div>
+   </div>
+
+   <!-- Slide-up-card -->
+   <div class="cardSlide">
+     <img src="CSS/assets/img1.jpg" alt="img1">
+     <div class="content">
+     <h2>Post One Title</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     </div>
+   </div>
+
+   <!-- Switch with CSS -->
+  <div class="container9">
+   <label>
+     <input type="checkbox" name="" value="">
+     <span class="check"></span>
+     <span class="btn"></span>
+   </label>
+   <label>
+     <input type="checkbox" name="" value="">
+     <span class="check"></span>
+     <span class="btn" id="btn2"></span>
+   </label>
+  </div>
+
+   <!-- Text-Animations -->
+   <div class="container10">
+    <h1 data-text="Home">Home</h1>
+    <h1 data-text="About">About</h1>
+    <h1 data-text="Portfolio">Portfolio</h1>
+    <h1 data-text="Team">Team</h1>
+    <h1 data-text="Contact">Contact</h1>
+   </div>
+
+   <!-- Bouncing Spiral -->
+   <div class="container11">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   </div>
+
+   <!-- Rain Effect -->
+     <section>
+     </section>
+
+  <script>
+  var sec = document.querySelector(".secContainer");
+  var min = document.querySelector(".minContainer");
+  var hr = document.querySelector(".hrContainer");
+  setInterval(function() {
+      var d = new Date();
+      // console.log(d.getHours()*15+":"+d.getMinutes()*6+":"+d.getSeconds()*6);
+      sec.style.transform = "rotate("+d.getSeconds()*6+"deg)";
+      min.style.transform = "rotate("+d.getMinutes()*6+"deg)";
+      hr.style.transform = "rotate("+d.getHours()*30+"deg)";
+  },1000);
+  </script>
   </body>
 </html>
