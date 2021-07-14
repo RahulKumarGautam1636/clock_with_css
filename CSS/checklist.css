@@ -1,0 +1,67 @@
+.containerthree {
+  height: 530px;
+  width: 530px;
+  background: #042b3e;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-top: 47px solid #03A9F4;
+}
+.containerthree h1 {
+  color: #fff;
+  box-shadow: 0px 4px #fff;
+  font-size: 30px;
+  margin: 35px 0 31px -35px;
+  padding-bottom: 8px;
+}
+.containerthree label {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 19px 0;
+}
+.containerthree input {
+  -webkit-appearance: none;
+}
+.containerthree span {
+  font-size: 27px;
+  color: white;
+  position: relative;
+  font-size: 25px;
+}
+.containerthree span::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: 0.7s;
+  transition-delay: 0.2s;
+}
+.containerthree label input:checked ~ span {
+  opacity: 0.2;
+}
+.containerthree label input:checked ~ span::before {
+  width: 100%;
+  transition-delay: 0;
+}
+.containerthree label i {
+    top: 2px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 20px 0 48px;
+    border: 2px solid #fff;
+    transition: transform 0.4s;
+}
+.containerthree label input:checked ~ i {
+  height: 15px;
+  border-top: none;
+  border-right: none;
+  transform: translateY(-4px) rotate(-45deg);
+}
