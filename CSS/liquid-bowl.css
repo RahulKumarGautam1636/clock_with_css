@@ -51,3 +51,14 @@
 .containerFive:hover::after {
   top: -120%;
 }
+#shadows {
+  content: '';
+  position: absolute;
+  left: 13%;
+  bottom: -2%;
+  height: 8%;
+  width: 51%;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(15px);
+  border-radius: 50%;
+}
