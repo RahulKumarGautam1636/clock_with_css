@@ -18,6 +18,7 @@ body {
   flex-wrap: wrap;
 }
 .outerWrapper .wrapper {
+  position: relative;
   width: 50%;
   min-width: 35rem;
   min-height: 45rem;
