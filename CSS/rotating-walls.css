@@ -1,0 +1,169 @@
+.bodys {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 650px;
+  background: rgba(0, 0, 255, 0.4);;
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  height: 50px;
+  width: 400px;
+  transform-style: preserve-3d;
+  background: #fff;
+  animation: rotates 5s linear infinite;
+}
+@keyframes rotates {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+.box:before,
+.box::after,
+.box span::before,
+.box span::after {
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.8);
+}
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75px;
+  background: #fff;
+  transform-origin: left;
+  transform: rotateY(-90deg);
+}
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 75px;
+  background: #fff;
+  transform-origin: right;
+  transform: rotateY(90deg);
+}
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translateZ(75px);
+}
+.box span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  transform-origin: top;
+  background: #fff;
+  transform: rotateX(-90deg);
+}
+.box span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  transform-origin: bottom;
+  background: #fff;
+  transform: rotateX(90deg);
+}
+.container > div {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotate(calc(36deg * var(--i))) translateZ(-37.5px);
+}
+.container {
+  height: 1000px;
+  width: 1241px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background: rgba(250, 0, 0, 0.5); */
+  transform-style: preserve-3d;
+  transform: rotateY(40deg);
+  animation: verticalRotation 15s linear infinite;
+}
+@keyframes verticalRotation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.container::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 130%;
+  background-size: 35% 35%;
+  background-image: url(assets/tiles.jpg);
+  transform-origin: bottom;
+  transform: rotateX(90deg) translate3d(0, 50%, 13rem);
+  box-shadow: inset 0 5px 55px rgb(0, 0, 0, 0.8);
+}
+.container::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 112%;
+  background-size: 35% 35%;
+  background-image: url(assets/walls.jpg);
+  transform: translateZ(-500px);
+  box-shadow: inset 0px 0px 100px #000;
+  backface-visibility: hidden;
+}
+#sideWalls {
+  position: absolute;
+  height: 100%;
+  width: 108%;
+  transform-style: preserve-3d;
+  background: url(assets/walls.jpg);
+  background-size: 40% 40%;
+  transform: rotateY(90deg) translateZ(-500px);
+  box-shadow: inset 0 5px 55px rgb(0, 0, 0, 0.8);
+  backface-visibility: hidden;
+}
+#sideWalls::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(assets/walls.jpg);
+  background-size: 40% 40%;
+  transform: translateZ(1050px) rotateY(180deg);
+  box-shadow: inset 0 5px 55px rgb(0, 0, 0, 0.8);
+  backface-visibility: hidden;
+}
+#sideWalls::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(assets/walls.jpg);
+  background-size: 40% 40%;
+  transform: rotateY(90deg) translate3d(-50%, 0px, -500px);
+  background: rgba(255, 0, 0, 0.5);
+  backface-visibility: hidden;
+  background: url(assets/walls.jpg);
+  box-shadow: inset 0 5px 55px rgb(0, 0, 0, 0.8);
+  background-size: 40% 40%;
+}
