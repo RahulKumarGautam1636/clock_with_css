@@ -45,4 +45,7 @@ section::before {
   section {
     height: 37vh;
   }
+  .bodys {
+    height: 50vh;
+  }
 }
