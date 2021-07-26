@@ -1,0 +1,113 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+/* body {
+  min-height: 100vh;
+  background: #fff;
+  font-family: sans-serif;
+} */
+.menu-container {
+  position: absolute;
+  height: 54rem;
+  background: #7050f2;
+  width: 6rem;
+  max-width: 18rem;
+  border-right: 10px solid cyan;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+}
+.menu-container:hover {
+  width: 18rem;
+}
+p {
+  white-space: nowrap;
+}
+.menu-container ul {
+  position: relative;
+  height: 75%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.menu li,
+#bg li {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 18px 0 0 18px;
+  padding-left: 1rem;
+  width: 100%;
+  z-index: 3;
+}
+/* ----------------Remove #bg id from li:before and uncomment javascript code for non-sliding effect-------------- */
+#bg li::before {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  width: 2rem;
+  border-radius: 15px;
+  background: #7050f2;
+  top: -1.5rem;
+  right: -1px;
+}
+#bg li::after {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  width: 2rem;
+  border-radius: 15px;
+  background: #7050f2;
+  bottom: -1.5rem;
+  right: -1px;
+}
+.active {
+  background: cyan;
+}
+.active::before {
+  box-shadow: 15px 15px 0 cyan;
+}
+.active::after {
+  box-shadow: 15px -15px 0 cyan;
+}
+#bg {
+  height: 100%;
+  position: absolute;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: visible;
+  z-index: 0;
+}
+
+#bg li {
+  border-radius: 18px;
+}
+#bg li:nth-child(2) {
+  background: #fff;
+}
+#bg .slider {
+  background: cyan;
+  transform: translateY(32px);
+  transition: 0.2s linear;
+}
+.slider::before {
+  box-shadow: 15px 15px 0 cyan;
+}
+.slider::after {
+  box-shadow: 15px -15px 0 cyan;
+}
+
+.menu li img {
+  width: 22px;
+  margin-right: 2rem;
+  filter: invert(1);
+}
+.menu li:hover img {
+  filter: invert(0);
+}
