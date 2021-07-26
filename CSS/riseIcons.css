@@ -6,7 +6,6 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  margin-top: -19rem;
 }
 .riseIcon ul {
   display: flex;
